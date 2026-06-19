@@ -79,8 +79,16 @@
   <section id="hero" class="bg-navy text-white py-16 px-4">
     <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
 
-      <!-- Left: logo + text + CTA -->
-      <div class="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+      <!-- Scene image: DOM-first for WeChat crawler, visually right on desktop via order-2 -->
+      <div class="flex-1 flex justify-center w-full order-first lg:order-last">
+        <img src="assets/working_capy.png" alt="Handy Capy team at work"
+             class="w-full max-w-sm lg:max-w-none rounded-3xl"
+             style="-webkit-mask-image: radial-gradient(ellipse 88% 88% at 50% 50%, black 50%, transparent 100%);
+                    mask-image: radial-gradient(ellipse 88% 88% at 50% 50%, black 50%, transparent 100%);" />
+      </div>
+
+      <!-- Text + CTA: visually left on desktop -->
+      <div class="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left order-last lg:order-first">
         <img src="assets/logo_large.png" alt="Handy Capy" class="h-48 w-auto mb-6 drop-shadow-xl" />
         <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
           <span class="lang-en">Your Local Handyman<br/>in London, ON</span>
@@ -106,14 +114,6 @@
             <span class="lang-zh">✉ 发送邮件</span>
           </a>
         </div>
-      </div>
-
-      <!-- Right: scene image with radius + feathered edges -->
-      <div class="flex-1 flex justify-center w-full">
-        <img src="assets/working_capy.png" alt="Handy Capy team at work"
-             class="w-full max-w-sm lg:max-w-none rounded-3xl"
-             style="-webkit-mask-image: radial-gradient(ellipse 88% 88% at 50% 50%, black 50%, transparent 100%);
-                    mask-image: radial-gradient(ellipse 88% 88% at 50% 50%, black 50%, transparent 100%);" />
       </div>
 
     </div>
