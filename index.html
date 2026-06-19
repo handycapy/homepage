@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Handy Capy – Repairs & Maintenance in London, ON. Serving within 50 km. Call (226) 998-8023." />
+  <meta name="keywords" content="handyman London Ontario, repairs maintenance London ON, Handy Capy" />
+  <title>Handy Capy – Repairs & Maintenance | London, ON</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#1B2A4A',
+            gold: '#F5C842',
+            'gold-dark': '#D4A800',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .lang-zh { display: none; }
+    body.zh .lang-en { display: none; }
+    body.zh .lang-zh { display: revert; }
+    .service-card:hover { transform: translateY(-4px); }
+    .service-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .service-card:hover { box-shadow: 0 8px 24px rgba(27,42,74,0.15); }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- NAV -->
+  <nav class="bg-navy sticky top-0 z-50 shadow-md">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3">
+        <img src="assets/logo_medium.png" alt="Handy Capy logo" class="h-10 w-auto" />
+        <span class="text-white font-bold text-lg tracking-wide hidden sm:block">HANDY CAPY</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="#services" class="text-gray-300 hover:text-gold text-sm transition-colors">
+          <span class="lang-en">Services</span>
+          <span class="lang-zh">服务项目</span>
+        </a>
+        <a href="#contact" class="text-gray-300 hover:text-gold text-sm transition-colors">
+          <span class="lang-en">Contact</span>
+          <span class="lang-zh">联系我们</span>
+        </a>
+        <button id="lang-toggle"
+          onclick="toggleLang()"
+          class="bg-gold text-navy font-bold text-xs px-3 py-1.5 rounded-full hover:bg-gold-dark transition-colors">
+          中文
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="bg-navy text-white py-16 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+
+      <!-- Left: logo + text + CTA -->
+      <div class="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <img src="assets/logo_large.png" alt="Handy Capy" class="h-48 w-auto mb-6 drop-shadow-xl" />
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
+          <span class="lang-en">Your Local Handyman<br/>in London, ON</span>
+          <span class="lang-zh">伦敦市本地维修<br/>专业上门服务</span>
+        </h1>
+        <p class="text-gray-300 text-lg mb-3">
+          <span class="lang-en">Repairs & Maintenance · Serving within 50 km of London, Ontario</span>
+          <span class="lang-zh">维修与保养 · 安大略省伦敦市，服务半径 50 公里</span>
+        </p>
+        <p class="text-gold font-semibold text-xl mb-8">
+          <span class="lang-en">Per-project pricing · No hidden fees</span>
+          <span class="lang-zh">按项目报价 · 无隐藏费用</span>
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:+12269988023"
+             class="bg-gold text-navy font-bold py-3 px-8 rounded-full text-lg hover:bg-gold-dark transition-colors shadow-lg">
+            <span class="lang-en">📞 Call Now</span>
+            <span class="lang-zh">📞 立即致电</span>
+          </a>
+          <a href="mailto:service@handycapy.com"
+             class="border-2 border-gold text-gold font-bold py-3 px-8 rounded-full text-lg hover:bg-gold hover:text-navy transition-colors">
+            <span class="lang-en">✉ Email Us</span>
+            <span class="lang-zh">✉ 发送邮件</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: scene image with radius + feathered edges -->
+      <div class="flex-1 flex justify-center w-full">
+        <img src="assets/working_capy.png" alt="Handy Capy team at work"
+             class="w-full max-w-sm lg:max-w-none rounded-3xl"
+             style="-webkit-mask-image: radial-gradient(ellipse 88% 88% at 50% 50%, black 50%, transparent 100%);
+                    mask-image: radial-gradient(ellipse 88% 88% at 50% 50%, black 50%, transparent 100%);" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 px-4 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-extrabold text-navy text-center mb-2">
+        <span class="lang-en">Our Services</span>
+        <span class="lang-zh">服务项目</span>
+      </h2>
+      <p class="text-center text-gray-500 mb-10">
+        <span class="lang-en">What we can do for you</span>
+        <span class="lang-zh">我们能为您提供的服务</span>
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+        <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <img src="assets/painting_capy.png" alt="Interior repairs" class="h-24 w-auto mb-4" />
+          <h3 class="font-bold text-navy text-lg mb-2">
+            <span class="lang-en">Interior Repairs</span>
+            <span class="lang-zh">室内修补</span>
+          </h3>
+          <ul class="text-gray-600 text-sm space-y-1">
+            <li class="lang-en">Drywall patching & sanding</li>
+            <li class="lang-zh">Drywall 补洞、打磨</li>
+            <li class="lang-en">Interior painting & touch-ups</li>
+            <li class="lang-zh">内墙刷漆、补漆</li>
+            <li class="lang-en">Baseboard & trim installation</li>
+            <li class="lang-zh">踢脚线、门框线脚安装</li>
+            <li class="lang-en">Door adjustments & hinges</li>
+            <li class="lang-zh">门扇调整、铰链修复</li>
+            <li class="lang-en">Window screen replacement</li>
+            <li class="lang-zh">窗纱更换</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <img src="assets/plumber_capy.png" alt="Bathroom and plumbing" class="h-24 w-auto mb-4" />
+          <h3 class="font-bold text-navy text-lg mb-2">
+            <span class="lang-en">Bathroom & Plumbing</span>
+            <span class="lang-zh">卫浴小水工</span>
+          </h3>
+          <ul class="text-gray-600 text-sm space-y-1">
+            <li class="lang-en">Faucet & showerhead replacement</li>
+            <li class="lang-zh">水龙头、淋浴头更换</li>
+            <li class="lang-en">Toilet seat & flush mechanism</li>
+            <li class="lang-zh">马桶座圈、冲水装置更换</li>
+            <li class="lang-en">Sink drain unclogging</li>
+            <li class="lang-zh">洗手池疏通</li>
+            <li class="lang-en">Tub / shower caulking</li>
+            <li class="lang-zh">浴缸、淋浴打玻璃胶</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <img src="assets/drilling_capy.png" alt="Hardware and installation" class="h-24 w-auto mb-4" />
+          <h3 class="font-bold text-navy text-lg mb-2">
+            <span class="lang-en">Hardware & Installation</span>
+            <span class="lang-zh">五金与安装</span>
+          </h3>
+          <ul class="text-gray-600 text-sm space-y-1">
+            <li class="lang-en">Furniture assembly (IKEA etc.)</li>
+            <li class="lang-zh">平板家具组装（IKEA 等）</li>
+            <li class="lang-en">Door locks & handles</li>
+            <li class="lang-zh">门锁、门把手更换</li>
+            <li class="lang-en">Cabinet hinges & drawer slides</li>
+            <li class="lang-zh">橱柜铰链、滑轨更换</li>
+            <li class="lang-en">Curtain rods & blinds</li>
+            <li class="lang-zh">窗帘杆、百叶窗安装</li>
+            <li class="lang-en">TV mounts & wall art</li>
+            <li class="lang-zh">电视挂架、画框上墙</li>
+            <li class="lang-en">Smoke & CO detector install</li>
+            <li class="lang-zh">烟雾报警器、CO 探测器安装</li>
+            <li class="lang-en">Grab bars & child safety</li>
+            <li class="lang-zh">浴室扶手、儿童安全防护</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <img src="assets/hammering_capy.png" alt="Outdoor repairs" class="h-24 w-auto mb-4" />
+          <h3 class="font-bold text-navy text-lg mb-2">
+            <span class="lang-en">Outdoor (Light)</span>
+            <span class="lang-zh">户外轻型</span>
+          </h3>
+          <ul class="text-gray-600 text-sm space-y-1">
+            <li class="lang-en">Wood fence board repair</li>
+            <li class="lang-zh">木围栏板材修复</li>
+            <li class="lang-en">Shed wall & door repair</li>
+            <li class="lang-zh">Shed 墙板、门页修复</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Not offered -->
+      <div class="mt-10 bg-amber-50 border border-amber-200 rounded-2xl p-6 max-w-2xl mx-auto text-sm text-amber-800">
+        <p class="font-semibold mb-1">
+          <span class="lang-en">⚠️ We do not handle: electrical panel/new wiring, gas, new plumbing, or structural changes (Ontario regulations require licensed tradespeople).</span>
+          <span class="lang-zh">⚠️ 不承接：电气面板/布新电线、燃气、新建管道、结构性改造（安省法规需持证技师）。</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-extrabold text-navy text-center mb-10">
+        <span class="lang-en">Why Choose Handy Capy?</span>
+        <span class="lang-zh">为什么选择 Handy Capy？</span>
+      </h2>
+      <div class="grid sm:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-5xl mb-3">✅</div>
+          <h3 class="font-bold text-navy text-lg mb-2">
+            <span class="lang-en">Honest & Transparent</span>
+            <span class="lang-zh">诚实透明</span>
+          </h3>
+          <p class="text-gray-600 text-sm">
+            <span class="lang-en">Per-project quotes upfront. We only take jobs we can do well — no upselling.</span>
+            <span class="lang-zh">上门前给出明确报价，只接我们能做好的活，绝不多收费。</span>
+          </p>
+        </div>
+        <div>
+          <div class="text-5xl mb-3">⚡</div>
+          <h3 class="font-bold text-navy text-lg mb-2">
+            <span class="lang-en">Fast Response</span>
+            <span class="lang-zh">响应迅速</span>
+          </h3>
+          <p class="text-gray-600 text-sm">
+            <span class="lang-en">Local and flexible. We aim to respond within a few hours and schedule quickly.</span>
+            <span class="lang-zh">本地团队，灵活调度，通常数小时内回复并快速安排上门。</span>
+          </p>
+        </div>
+        <div>
+          <div class="text-5xl mb-3">📍</div>
+          <h3 class="font-bold text-navy text-lg mb-2">
+            <span class="lang-en">Locally Rooted</span>
+            <span class="lang-zh">扎根本地</span>
+          </h3>
+          <p class="text-gray-600 text-sm">
+            <span class="lang-en">Based in London, ON — we know the area and are invested in our community.</span>
+            <span class="lang-zh">总部位于安省伦敦市，熟悉本地情况，服务社区是我们的初心。</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 px-4 bg-navy text-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-extrabold mb-4">
+        <span class="lang-en">Get in Touch</span>
+        <span class="lang-zh">联系我们</span>
+      </h2>
+      <p class="text-gray-300 mb-8">
+        <span class="lang-en">We serve London, ON and surrounding areas within 50 km. Reach out for a free quote.</span>
+        <span class="lang-zh">服务安省伦敦市及周边 50 公里范围，欢迎联系获取免费报价。</span>
+      </p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-10">
+        <a href="tel:+12269988023"
+           class="flex items-center gap-3 bg-gold text-navy font-bold py-4 px-8 rounded-2xl text-xl hover:bg-gold-dark transition-colors shadow-lg">
+          <span>📞</span>
+          <span>(226) 998-8023</span>
+        </a>
+        <a href="mailto:service@handycapy.com"
+           class="flex items-center gap-3 border-2 border-gold text-gold font-semibold py-4 px-8 rounded-2xl text-lg hover:bg-gold hover:text-navy transition-colors">
+          <span>✉</span>
+          <span>service@handycapy.com</span>
+        </a>
+      </div>
+      <p class="text-gray-400 text-sm">
+        <span class="lang-en">📍 London, Ontario · 50 km service radius</span>
+        <span class="lang-zh">📍 安大略省伦敦市 · 服务半径 50 公里</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-500 text-center text-xs py-4 px-4">
+    <span class="lang-en">© 2026 Handy Capy · Repairs & Maintenance · London, ON</span>
+    <span class="lang-zh">© 2026 Handy Capy · 维修与保养 · 安大略省伦敦市</span>
+  </footer>
+
+  <script>
+    function toggleLang() {
+      const btn = document.getElementById('lang-toggle');
+      if (document.body.classList.contains('zh')) {
+        document.body.classList.remove('zh');
+        document.documentElement.lang = 'en';
+        btn.textContent = '中文';
+      } else {
+        document.body.classList.add('zh');
+        document.documentElement.lang = 'zh';
+        btn.textContent = 'EN';
+      }
+    }
+  </script>
+</body>
+</html>
